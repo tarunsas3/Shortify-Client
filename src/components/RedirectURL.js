@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { redirectURL } from "../utils/networkHandler";
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://shortify-it.netlify.app";
 
 const RedirectURL = (props) => {
   const [message, setMessage] = useState("");
