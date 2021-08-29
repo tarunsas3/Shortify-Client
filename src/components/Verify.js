@@ -24,7 +24,7 @@ const Verify = (props) => {
       }
     };
     verifyURL();
-  }, []);
+  }, [props.match.params.hash, history]);
 
   return (
     <section>

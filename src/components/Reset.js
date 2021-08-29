@@ -24,7 +24,7 @@ const Reset = (props) => {
       setVerified({ isVerified: res.verified, message: res.message });
     };
     verifyURL();
-  }, []);
+  }, [props.match.params.hash, props.match.params.id]);
 
   const handleSubmit = async () => {
     if (newPassword.length > 0) {

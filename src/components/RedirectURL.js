@@ -18,7 +18,7 @@ const RedirectURL = (props) => {
       }
     };
     fetchLongURL();
-  }, []);
+  }, [props.location.pathname]);
 
   return (
     <section>
