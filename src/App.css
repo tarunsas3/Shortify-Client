@@ -1,38 +1,126 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cascadia Code";
+  color: #fff;
+}
+section {
+  position: relative;
+  background: url("./bg.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+h1 {
+  color: #ffffff;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.activationMsg {
+  color: #ffffff;
+  font-size: 1.5em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.control input {
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  color: #000;
+  background: #ddd;
+  outline: none;
+  border: none;
+  margin: 1em 0;
+  font-family: cascadia code;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.control input[type="submit"] {
+  background: crimson;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.control input[type="submit"]:hover {
+  opacity: 1;
+}
+.link {
+  text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.link .a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+}
+.link .a:hover {
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder {
+  color: gray;
+  font-family: "Cascadia code";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 17px;
+  margin-right: 17px;
+  margin-bottom: 20px;
+}
+
+.stats > h4 {
+  background-color: orange;
+  font-weight: bolder;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.form-container-dashboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 840px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.link-url {
+  text-decoration: none;
+  color: #fff;
 }
